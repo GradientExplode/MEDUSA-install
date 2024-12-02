@@ -52,7 +52,7 @@ rm -rf ./szip-${SZIP_VERSION}
 
 # Install HDF5 (parallel version)
 HDF5_VERSION="1.14.4-3"
-HDF5_URL="https://github.com/HDFGroup/hdf5/releases/download/hdf5_${HDF5_VERSION}/hdf5-${HDF5_VERSION}.tar.gz"
+HDF5_URL="https://github.com/HDFGroup/hdf5/releases/download/hdf5_1.14.4.3/hdf5-1.14.4-3.tar.gz"
 wget ${HDF5_URL} -O hdf5.tar.gz
 tar -xzf hdf5.tar.gz
 cd hdf5-${HDF5_VERSION}
