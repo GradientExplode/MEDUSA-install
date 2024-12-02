@@ -56,7 +56,7 @@ HDF5_URL="https://github.com/HDFGroup/hdf5/releases/download/hdf5_${HDF5_VERSION
 wget ${HDF5_URL} -O hdf5.tar.gz
 tar -xzf hdf5.tar.gz
 cd hdf5-${HDF5_VERSION}
-CC=mpicc ./configure --enable-parallel --prefix=/usr/local/hdf5
+./configure -with-zlib=/usr/local/zlib --enable-parallel --enable-hl --enable-static --enable-shared --prefix=/usr/local/hdf5
 make -j$(nproc)
 make install
 cd /root
