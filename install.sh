@@ -22,7 +22,7 @@ cmake ../ -DCMAKE_INSTALL_PREFIX=/usr/local/kokkos \
           -DKokkos_ENABLE_CUDA=ON \
           -DCMAKE_BUILD_TYPE=Release
 make -j$(nproc)
-sudo make install
+make install
 cd /root
 rm -rf ./kokkos-${KOKKOS_VERSION}
 
@@ -34,7 +34,7 @@ tar -xzf zlib.tar.gz
 cd zlib-${ZLIB_VERSION}
 ./configure --prefix=/usr/local/zlib
 make -j$(nproc)
-sudo make install
+make install
 cd /root
 rm -rf ./zlib-${ZLIB_VERSION}
 
@@ -46,7 +46,7 @@ tar -xzf szip.tar.gz
 cd szip-${SZIP_VERSION}
 ./configure --prefix=/usr/local/szip
 make -j$(nproc)
-sudo make install
+make install
 cd /root
 rm -rf ./szip-${SZIP_VERSION}
 
@@ -58,7 +58,7 @@ tar -xzf hdf5.tar.gz
 cd hdf5-${HDF5_VERSION}
 CC=mpicc ./configure --enable-parallel --prefix=/usr/local/hdf5
 make -j$(nproc)
-sudo make install
+make install
 cd /root
 rm -rf ./hdf5-${HDF5_VERSION}
 
