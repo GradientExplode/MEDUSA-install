@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Update package list
-sudo apt update
+apt update
 
 # Install required packages
-sudo apt install -y unzip build-essential cmake libboost-all-dev
+apt install -y unzip build-essential cmake libboost-all-dev
 
 #To root
 cd /root
