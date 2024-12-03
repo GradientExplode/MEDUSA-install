@@ -26,6 +26,7 @@ make install
 cd /root
 rm -rf ./kokkos-${KOKKOS_VERSION}
 
+: <<'END'
 # Install Zlib
 ZLIB_VERSION="1.3.1"
 ZLIB_URL="https://www.zlib.net/zlib-${ZLIB_VERSION}.tar.gz"
@@ -61,6 +62,7 @@ make -j$(nproc)
 make install
 cd /root
 rm -rf ./hdf5-${HDF5_VERSION}
+END
 
 # Download and set up GKG
 GKG_URL="https://framagit.org/cpoupon/gkg/-/archive/master/gkg-master.zip"
