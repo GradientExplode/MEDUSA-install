@@ -35,5 +35,5 @@ unzip gkg.zip
 cd Ginkgo-main
 mkdir build
 cd build
-cmake -DCMAKE_BUILD_TYPE=Release -DKokkos_ROOT=/usr/local/kokkos -DCMAKE_CXX_COMPILER=/usr/local/kokkos/bin/nvcc_wrapper ..
+cmake -DCMAKE_BUILD_TYPE=Release -DGINKGO_BUILD_NEW_GLOBAL_TRACTOGRAPHY=ON -DKokkos_ROOT=/usr/local/kokkos -DCMAKE_CXX_COMPILER=/usr/local/kokkos/bin/nvcc_wrapper ..
 make -j$(nproc)
