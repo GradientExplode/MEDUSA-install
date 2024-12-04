@@ -29,7 +29,7 @@ cd /root
 rm -rf ./kokkos-${KOKKOS_VERSION}
 
 # Download and set up GKG
-GKG_URL="https://framagit.org/cpoupon/gkg/-/archive/master/gkg-master.zip"
+GKG_URL="https://github.com/GradientExplode/Ginkgo/archive/refs/heads/main.zip"
 wget ${GKG_URL} -O gkg.zip
 unzip gkg.zip
 cd gkg-master
