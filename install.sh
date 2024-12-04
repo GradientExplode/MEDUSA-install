@@ -17,7 +17,8 @@ unzip kokkos.zip
 cd kokkos-${KOKKOS_VERSION}
 mkdir build
 cd build
-cmake ../ -DCMAKE_INSTALL_PREFIX=/usr/local/kokkos \
+cmake ../ -DCMAKE_CXX_COMPILER=g++ \
+          -DCMAKE_INSTALL_PREFIX=/usr/local/kokkos \
           -DKokkos_ENABLE_OPENMP=ON \
           -DKokkos_ENABLE_CUDA=ON \
           -DCMAKE_BUILD_TYPE=Release
