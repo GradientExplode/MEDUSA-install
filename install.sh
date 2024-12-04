@@ -4,7 +4,7 @@
 apt update
 
 # Install required packages
-apt install -y unzip build-essential cmake libboost-all-dev libhdf5-mpi-dev libmetis-dev libjpeg-dev libx11-dev libgsl-dev libblas-dev liblapack-dev 
+apt install -y unzip build-essential cmake libboost-all-dev libhdf5-mpi-dev libmetis-dev libjpeg-dev libx11-dev libgsl-dev
 
 #To root
 cd /root
@@ -35,5 +35,5 @@ unzip gkg.zip
 cd Ginkgo-main
 mkdir build
 cd build
-cmake -DCMAKE_BUILD_TYPE=Release -DGINKGO_BUILD_NEW_GLOBAL_TRACTOGRAPHY=ON -DKokkos_ROOT=/usr/local/kokkos -DCMAKE_CXX_COMPILER=/usr/local/kokkos/bin/nvcc_wrapper ..
+cmake -DCMAKE_BUILD_TYPE=Release -DKokkos_ROOT=/usr/local/kokkos -DCMAKE_CXX_COMPILER=/usr/local/kokkos/bin/nvcc_wrapper ..
 make -j$(nproc)
