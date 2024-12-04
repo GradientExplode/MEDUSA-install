@@ -32,7 +32,7 @@ rm -rf ./kokkos-${KOKKOS_VERSION}
 GKG_URL="https://github.com/GradientExplode/Ginkgo/archive/refs/heads/main.zip"
 wget ${GKG_URL} -O gkg.zip
 unzip gkg.zip
-cd gkg-master
+cd Ginkgo-master
 mkdir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Release -DKokkos_ROOT=/usr/local/kokkos -DCMAKE_CXX_COMPILER=/usr/local/kokkos/bin/nvcc_wrapper ..
