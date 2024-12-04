@@ -4,7 +4,7 @@
 apt update
 
 # Install required packages
-apt install -y unzip build-essential cmake libboost-all-dev libhdf5-mpi-dev libmetis-dev libjpeg-dev libx11-dev
+apt install -y unzip build-essential cmake libboost-all-dev libhdf5-mpi-dev libmetis-dev libjpeg-dev libx11-dev libgsl-dev
 
 #To root
 cd /root
