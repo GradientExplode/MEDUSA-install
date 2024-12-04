@@ -35,3 +35,5 @@ unzip gkg.zip
 cd gkg-master
 mkdir build
 cd build
+cmake -DCMAKE_BUILD_TYPE=Release -DKokkos_ROOT=/usr/local/kokkos -DCMAKE_CXX_COMPILER=/usr/local/kokkos/bin/nvcc_wrapper ..
+make -j$(nproc)
